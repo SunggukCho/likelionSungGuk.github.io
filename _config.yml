@@ -79,7 +79,7 @@ plugins:
 favicon: /assets/favicon_terminal.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Jekyll, NexT"
+keywords: "Jekyll, NexT, likelionSungGuk, ssafy"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -118,10 +118,10 @@ index_with_subtitle: true
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  categories: /categories/index.html
+  categories: /categories/
   about: about/index.html
-  archives: archive/index.html
-  tags: tag/index.html
+  archives: /archives/
+  tags: /tags/
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -214,8 +214,7 @@ font:
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
-  LinkLabel: Link
-  Github: github
+  Github: https://github.com/likelionSungGuk
 
 
 # Social Links Icons
@@ -233,7 +232,7 @@ social_icons:
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-avatar: /assets/download.jpg
+avatar: /assets/img/profile.jpg
 
 
 # Table Of Contents in the Sidebar
@@ -264,9 +263,9 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
+  # display: post
   #display: always
-  # display: hide
+  display: hide
   #display: remove
 
   # Sidebar offset from top menubar in pixels.
@@ -627,8 +626,8 @@ pace: false
 #pace-theme-mac-osx
 #pace-theme-minimal
 # For example
-pace_theme: pace-theme-center-simple
-# pace_theme: pace-theme-minimal
+# pace_theme: pace-theme-center-simple
+pace_theme: pace-theme-minimal
 
 # Canvas-nest
 canvas_nest: false
