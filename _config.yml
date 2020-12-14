@@ -120,8 +120,8 @@ menu:
   home: /
   categories: /categories/index.html
   about: about/index.html
-  archives: archive/archive.html
-  tags: tag/tag.html
+  archives: archive/index.html
+  tags: tag/index.html
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
