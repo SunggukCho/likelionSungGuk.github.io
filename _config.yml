@@ -274,10 +274,10 @@ sidebar:
   offset_float: 0
 
   # Back to top in sidebar
-  b2t: false
+  b2t: true
 
   # Scroll percent label in b2t button
-  scrollpercent: false
+  scrollpercent: true
 
 
 # Blog rolls
@@ -381,7 +381,7 @@ han: false
 # Disqus
 disqus:
   enable: true
-  shortname:
+  shortname: likelionsunggukgithub-io
   count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
@@ -586,7 +586,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: true
+  enable: auto
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
