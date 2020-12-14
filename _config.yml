@@ -24,9 +24,9 @@ paginate_path: "/page:num/"
 archive:
   paginate: 10
   paginate_path: "/page:num/"
-#category:
-  #paginate: 10
-  #paginate_path: "/page:num/"
+category:
+  paginate: 10
+  paginate_path: "/page:num/"
 tag:
   paginate: 10
   paginate_path: "/page:num/"
@@ -76,7 +76,7 @@ plugins:
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `assets/` directory.
-favicon: /assets/favicon.ico
+favicon: /assets/favicon_terminal.ico
 
 # Set default keywords (Use a comma to separate)
 keywords: "Jekyll, NexT"
@@ -109,7 +109,7 @@ seo: true
 
 # If true, will add site-subtitle to index page, added in jekyll config.
 # subtitle: Subtitle
-index_with_subtitle: false
+index_with_subtitle: true
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -118,8 +118,8 @@ index_with_subtitle: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories/
-  about: about/
+  categories: /categories/
+  about: about/index.html
   archives: archive/
   tags: tag/
   #sitemap: /sitemap.xml
@@ -132,8 +132,8 @@ menu:
 #   Key is the name of menu item and value is the name of FontAwesome icon. Key is case-senstive.
 #   When an question mask icon presenting up means that the item has no mapping icon.
 menu_icons:
-  enable: true
-  KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
+  enable: auto
+  # KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
   home: home
   about: user
   categories: th
@@ -233,7 +233,7 @@ social_icons:
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-#avatar:
+avatar:/assets/download.jpg
 
 
 # Table Of Contents in the Sidebar
@@ -244,7 +244,7 @@ toc:
   number: true
 
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true
 
 
 # Creative Commons 4.0 International License.
@@ -256,8 +256,8 @@ toc:
 
 sidebar:
   # Sidebar Position, available value: left | right
-  # position: left
-  position: right
+  position: left
+  # position: right
 
   # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
@@ -266,7 +266,7 @@ sidebar:
   #  - remove  Totally remove sidebar including sidebar toggle.
   display: post
   #display: always
-  #display: hide
+  # display: hide
   #display: remove
 
   # Sidebar offset from top menubar in pixels.
@@ -281,9 +281,9 @@ sidebar:
 
 
 # Blog rolls
-#links_title: Links
-#links_layout: block
-#links_layout: inline
+links_title: Links
+links_layout: block
+links_layout: inline
 #links:
   #Title: http://example.com/
 
@@ -586,10 +586,10 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: auto
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
-  trigger: auto
+  trigger: manual
   # show top n results per article, show all results by setting to -1
   top_n_per_article: 1
 
@@ -627,8 +627,8 @@ pace: false
 #pace-theme-mac-osx
 #pace-theme-minimal
 # For example
-# pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-minimal
+pace_theme: pace-theme-center-simple
+# pace_theme: pace-theme-minimal
 
 # Canvas-nest
 canvas_nest: false

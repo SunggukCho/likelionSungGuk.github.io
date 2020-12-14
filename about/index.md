@@ -2,17 +2,11 @@
 layout: page
 type: about
 ---
-
-# likelionSungGuk 조성국
-
+## Information
 Email: sung9gi@gmail.com
-
 Phone: +82 10 7120 7156
-
 Blog: https://likelionSungGuk.github.io
-
 github: https://github.com/likelionSungGuk/
-
 
 
 ## Objectives
