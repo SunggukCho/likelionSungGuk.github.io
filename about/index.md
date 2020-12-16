@@ -4,17 +4,14 @@ type: about
 ---
 
 ---
-layout: page
-title: About
-permalink: /about/
----
-
 ## [Information]
 
 - Email: sung9gi@gmail.com
 - Phone: +82-10-7120-7156
 - Blog: [Blog link](https://likelionSungGuk.github.io)
-- github: [github link](https://github.com/likelionSungGuk/) 
+- github: [Github link](https://github.com/likelionSungGuk/) 
+
+
 
 ## [Objectives]
 
@@ -46,7 +43,7 @@ permalink: /about/
 
 - python
 - ruby
-- vanilla javascript
+- javascript
 
 
 
@@ -68,9 +65,16 @@ permalink: /about/
 
 #### 영화추천사이트 WATCHUB
 
-> 간단 설명
+> 사용자의 선호도(좋아요 기능), 시청기록(이미 본 영화 기능) 등을 활용해 사용자 맞춤 영화 추천 알고리즘을 구현한 사이트입니다.
+>
+> `영화가 모여있는 공간!`이라는 점에서 개발자라면 매일밤 들어가는 `github`의 `hub`를 활용하여 `WATCHUB`라는 서비스명을 짓게 되었습니다.
+>
+> SERVER와 CLIENT를 완벽히 구분하고 REST API를 통해서만 통신하도록 하였습니다.
+>
+> 프로젝트에 대한 보다 자세한 설명은 아래 Client side repository의 README에 상세히 작성하였습니다.
 
-- github repository: ![]()
+- github repository: 
+  - [CLIENT side(Front-end) repository](https://github.com/likelionSungGuk/watchub-front)
 - Front-end: vanilla javascript, Vuejs framework (vuex, vue router), bootstrap
 - Back-end: python, django, sqlite, serializer, REST API
 - Authentication: JWT token
