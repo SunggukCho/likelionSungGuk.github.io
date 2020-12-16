@@ -1,27 +1,18 @@
 # NexT
 
-> NexT is a high quality elegant [Jekyll](https://jekyllrb.com) theme ported from [Hexo NexT](https://github.com/iissnan/hexo-theme-next). It is crafted from scratch, with love.
-
-
- * [Live Preview](http://simpleyyt.github.io/jekyll-theme-next/)
- * [Yitao's Blog](http://simpleyyt.com)
+> 
 
 ## Screenshots
 
 * Desktop
-![Desktop Preview](http://iissnan.com/nexus/next/desktop-preview.png)
 
 * Sidebar
 
-![Desktop Sidebar Preview](http://iissnan.com/nexus/next/desktop-sidebar-preview.png)
-
 * Sidebar (Post details page)
-
-![Desktop Sidebar Preview](http://iissnan.com/nexus/next/desktop-sidebar-toc.png)
 
 * Mobile
 
-![Mobile Preview](http://iissnan.com/nexus/next/mobile.png)
+
 
 
 ## Installation
