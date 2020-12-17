@@ -1,7 +1,8 @@
 # likelionSungGuk.gihub.io Blog 만들기
 
-> jekyll의 Next theme을 사용해서 블로그를 만들고 싶은 분들은
->  [`jekyll Blog 만드는게 글쓰는 것보다 힘든 사람들에게`](https://likelionsungguk.github.io/20-12-17/jekyll-Blog-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B2%8C-%EA%B8%80%EC%93%B0%EB%8A%94-%EA%B2%83%EB%B3%B4%EB%8B%A4-%ED%9E%98%EB%93%A0-%EC%82%AC%EB%9E%8C%EB%93%A4%EC%97%90%EA%B2%8C) 포스팅을 참고해주세요
+jekyll의 Next theme을 사용해서 블로그를 만들고 싶은 분들은
+
+#### [`jekyll Blog 만드는게 글쓰는 것보다 힘든 사람들에게`](https://likelionsungguk.github.io/20-12-17/jekyll-Blog-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B2%8C-%EA%B8%80%EC%93%B0%EB%8A%94-%EA%B2%83%EB%B3%B4%EB%8B%A4-%ED%9E%98%EB%93%A0-%EC%82%AC%EB%9E%8C%EB%93%A4%EC%97%90%EA%B2%8C) 포스팅을 참고해주세요
 
 ## Screenshots
 

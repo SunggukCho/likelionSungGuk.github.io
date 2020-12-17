@@ -22,14 +22,13 @@ tags:
 
 1. github pages 호스팅을 기본으로 합니다.
 
-   ```markdown
-   username.github.io
-   라는 이름의 repository를 github에 만들어 줍니다.
-   ```
-
+   `username.github.io`라는 이름의 repository를 github에 만들어 줍니다.
+   
 2. `mac OS`에서 `ruby on rails`를 활용합니다. (windows는 좀 더 복잡한 것 같습니다... 추후 windows에서도 해보고 2탄을 올릴까 생각중입니다)
-   ruby 를 설치하지 않고 jekyll 을 활용하고 싶으시다면  [쉽고 빠르게 수준 급의 GitHub 블로그 만들기 - jekyll remote theme으로](https://dreamgonfly.github.io/blog/jekyll-remote-theme/) 포스팅을 참고하세요. 저의 포스팅에서는 좀 더 custom이 가능한 `ruby on rails`를 활용하는 방법을 설명드리겠습니다.
-
+   
+ruby 를 설치하지 않고 jekyll 을 활용하고 싶으시다면  [쉽고 빠르게 수준 급의 GitHub 블로그 만들기 - jekyll remote theme으로](https://dreamgonfly.github.io/blog/jekyll-remote-theme/) 포스팅을 참고하세요. 
+   저의 포스팅에서는 좀 더 custom이 가능한 `ruby on rails`를 활용하는 방법을 설명드리겠습니다.
+   
 3. 마음에 드는 jekyll theme를 선택합니다. 아래 사이트 들을 돌아다니며 자신이 원하는 theme를 찾아보세요
 
    - http://jekyllthemes.org/
@@ -42,30 +41,32 @@ tags:
    - 마크다운으로 글 작성
 
    - 카테고리
-
-   - tag기능 
-
+- tag기능 
    - 검색기능
+- 포스트 댓글 기능 등
+   
+위의 요소들을 포함하는 테마 중에서 깔끔하다고 생각한[ `Next theme`](https://github.com/Simpleyyt/jekyll-theme-next)를 선택했습니다.
+   
 
-   - 포스트 댓글 기능 등
-
-     위의 요소들이 있는 테마 중에서 깔끔하다고 생각한[ `Next theme`](https://github.com/Simpleyyt/jekyll-theme-next)를 선택했습니다.
-
-   선택한 theme의 github repository를 로컬 환경에 다운받습니다. 이후 username.github.io 에 git remote 를 연결해줍니다.
-
-   ```bash
+   
+선택한 theme의 github repository를 로컬 환경에 다운받습니다. 이후 username.github.io 에 git remote 를 연결해줍니다.
+   
+```bash
    $ git remote add origin https://github.com/username/username.github.io
    ```
-
-3. .gitignore 를 추가해줍니다. 
-   [jekyll gitignore](https://gist.github.com/bradonomics/cf5984b6799da7fdfafd) 페이지를 활용하시면 됩니다.
-
-4. Jekyll은 기본적으로 `ruby on rails` 의 정적 페이지 프로젝트입니다. 따라서 ruby 언어를 설치해주셔야 합니다. 
-   만약 mac OS를 쓰고 계시면 ruby가 기본적으로 설치되어 있을 것입니다. 
+   
+3. .gitignore 를 추가해줍니다.
+   
+[jekyll gitignore](https://gist.github.com/bradonomics/cf5984b6799da7fdfafd) 페이지를 활용하시면 됩니다.
+   
+5. Jekyll은 기본적으로 `ruby on rails` 의 정적 페이지 프로젝트입니다. 따라서 ruby 언어 설치가 필요합니다.
+   만약 mac OS를 쓰고 계시면 ruby가 기본적으로 설치되어 있을 수도 있습니다. 
+   (아니면 homebrew를 통해 간단히 설치도 가능합니다.)
    (만약 windows OS를 쓰고 계시다면[ `rubyinstaller`](https://rubyinstaller.org/)를 활용해 설치하시면 됩니다. )
+   저희는 이번에는 rvm 을 사용해서 ruby를 설치해보겠습니다.
    ruby는 2.1.x 이상 버전으로 설치해주세요.
 
-5. 루비를 설치하기 전에 rvm을 설치하고 이후 ruby의 버전을 맞추어 설치해줍니다.
+6. 루비를 설치하기 전에 rvm을 설치하고 이후 ruby의 버전을 맞추어 설치해줍니다.
 
    ```bash
    $ \curl -L https://get.rvm.io | bash -s stable
@@ -94,7 +95,7 @@ tags:
 
 ## 2. Gem
 
-*만약 해당 과정 중  오류가 발생한다면  포스팅아래 3. errors & actions를 확인해주세요.*
+***만약 해당 과정 중  오류가 발생한다면  포스팅아래 3. errors & actions를 확인해주세요.***
 
 
 
