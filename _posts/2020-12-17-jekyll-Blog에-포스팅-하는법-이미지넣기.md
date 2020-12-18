@@ -92,7 +92,7 @@ tags: [blog, jekyll, blog, jekyll theme, NexT theme, 지킬 테마, 지킬 블�
 
 다시 파일트리를 살펴보면, `assets`폴더가 있습니다.
 
-![image-20201217205015321](2020-12-17-jekyll-Blog에-포스팅-하는법-이미지넣기.assets/image-20201217205015321.png)
+![image-20201217205015321](/assets/img/image-20201217205015321.png)
 
 저의 경우 포스팅에 사용하는 이미지들은 모두 `img`라는 폴더에 넣어두고 해당이미지의 `절대주소`를 마크다운에 링크해두었습니다.
 
