@@ -84,16 +84,11 @@ type: about
 #### 영화추천사이트 WATCHUB
 
 > 2020.11.19 ~ 2020.11.26 (1week)
->
-> 사용자의 선호도(좋아요 기능), 시청기록(이미 본 영화 기능) 등을 활용해 사용자 맞춤 영화 추천 알고리즘을 구현한 사이트입니다.
->
+>사용자의 선호도(좋아요 기능), 시청기록(이미 본 영화 기능) 등을 활용해 사용자 맞춤 영화 추천 알고리즘을 구현한 사이트입니다.
 > `영화가 모여있는 공간!`이라는 점에서 개발자라면 매일밤 들어가는 `github`의 `hub`를 활용하여 `WATCHUB`라는 서비스명을 짓게 되었습니다.
->
-> SERVER와 CLIENT를 완벽히 구분하고 REST API를 통해서만 통신하도록 하였습니다.
->
+>SERVER와 CLIENT를 완벽히 구분하고 REST API를 통해서만 통신하도록 하였습니다.
 > 프로젝트에 대한 보다 자세한 설명은 아래 Client side repository의 README에 상세히 작성하였습니다.
->
-> Team member: 2
+>Team member: 2
 
 - github repository: 
   - [CLIENT side(Front-end) repository](https://github.com/likelionSungGuk/watchub-front)
@@ -111,9 +106,7 @@ type: about
 #### 자율주행 알고리즘 COMPETITION
 
 > 2020.12.7 ~ 2020.12.29 (4weeks)
->
-> python을 활용하여 실시간으로 MAP의 장애물과 다른 차량을 피해 가장 빨리 완주하는 알고리즘 대회입니다.
->
+>python을 활용하여 실시간으로 MAP의 장애물과 다른 차량을 피해 가장 빨리 완주하는 알고리즘 대회입니다.
 > Team member: 2
 
 - github repository: 대회 주최측 요구로 비공개
@@ -124,8 +117,7 @@ type: about
 #### 한국어 자연어처리 분석 어플리케이션 PLUTO
 
 > 2020.11.19 ~ 2020.11.26 (1week)
->
-> Team member: 5
+>Team member: 5
 
 - github repository: [Pluto](https://github.com/likelionSungGuk/pluto-planb)
 - preview: [site link](https://pluto-planb2.herokuapp.com/)
@@ -142,12 +134,9 @@ type: about
 #### 라즈베리 파이를 이용한 미세먼지 경보 알림 프로젝트 
 
 > 스마트폰을 사용하지 못하는 취약계층에게 미세먼지 농도가 높은 날 경보를 울려 미세먼지에 대응 할 수 있도록 하는 프로젝트
->
-> 서울시 공공데이터를 활용하여 매 시간 사용자에게 미세먼지 농도가 위험수준을 넘어서면 알람소리와 불빛으로 경고하여 미세먼지에 대응할 수 있도록 함.
->
+>서울시 공공데이터를 활용하여 매 시간 사용자에게 미세먼지 농도가 위험수준을 넘어서면 알람소리와 불빛으로 경고하여 미세먼지에 대응할 수 있도록 함.
 > 라즈베리 파이를 통해 하드웨어로 볼 수 있도록 설계
->
-> Team member: 6
+>Team member: 6
 
 - preview: [port folio](/assets/data/융기프_해커톤포스터.pdf)
 - Back-end: python, linux, Raspberry pi
@@ -157,12 +146,9 @@ type: about
 #### 어학원 메타검색 사이트 TOST
 
 >  2015.05. ~ 2015.08.  (3months)
->
->  Y*사, H사, P사 등 영어학원 모든 수업을 모은 메타검색 사이트
->
+>Y*사, H사, P사 등 영어학원 모든 수업을 모은 메타검색 사이트
 >  과목, 레벨, 위치, 요일을 선택해서 영화예매하듯 수업을 고를 수 있습니다.
->
->  Team member: 5    
+>Team member: 5    
 
 - github repository: [tost](https://github.com/likelionSungGuk/tost)
 - preview:

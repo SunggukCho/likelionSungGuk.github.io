@@ -26,9 +26,10 @@ tags:
    
 2. `mac OS`에서 `ruby on rails`를 활용합니다. (windows는 좀 더 복잡한 것 같습니다... 추후 windows에서도 해보고 2탄을 올릴까 생각중입니다)
    
+
 ruby 를 설치하지 않고 jekyll 을 활용하고 싶으시다면  [쉽고 빠르게 수준 급의 GitHub 블로그 만들기 - jekyll remote theme으로](https://dreamgonfly.github.io/blog/jekyll-remote-theme/) 포스팅을 참고하세요. 
    저의 포스팅에서는 좀 더 custom이 가능한 `ruby on rails`를 활용하는 방법을 설명드리겠습니다.
-   
+
 3. 마음에 드는 jekyll theme를 선택합니다. 아래 사이트 들을 돌아다니며 자신이 원하는 theme를 찾아보세요
 
    - http://jekyllthemes.org/
@@ -44,21 +45,25 @@ ruby 를 설치하지 않고 jekyll 을 활용하고 싶으시다면  [쉽고 �
 - tag기능 
    - 검색기능
 - 포스트 댓글 기능 등
-   
-위의 요소들을 포함하는 테마 중에서 깔끔하다고 생각한[ `Next theme`](https://github.com/Simpleyyt/jekyll-theme-next)를 선택했습니다.
-   
+  
 
-   
+위의 요소들을 포함하는 테마 중에서 깔끔하다고 생각한[ `Next theme`](https://github.com/Simpleyyt/jekyll-theme-next)를 선택했습니다.
+
+개인적으로 깔끔한 테마를 추천하자면 [Tale](https://github.com/chesterhow/tale)테마도 추천합니다. `Next theme`과 Tale 사이에서 많이 고민했었습니다.
+
+
+
 선택한 theme의 github repository를 로컬 환경에 다운받습니다. 이후 username.github.io 에 git remote 를 연결해줍니다.
-   
+
 ```bash
    $ git remote add origin https://github.com/username/username.github.io
-   ```
-   
+```
+
 3. .gitignore 를 추가해줍니다.
    
+
 [jekyll gitignore](https://gist.github.com/bradonomics/cf5984b6799da7fdfafd) 페이지를 활용하시면 됩니다.
-   
+
 5. Jekyll은 기본적으로 `ruby on rails` 의 정적 페이지 프로젝트입니다. 따라서 ruby 언어 설치가 필요합니다.
    만약 mac OS를 쓰고 계시면 ruby가 기본적으로 설치되어 있을 수도 있습니다. 
    (아니면 homebrew를 통해 간단히 설치도 가능합니다.)
