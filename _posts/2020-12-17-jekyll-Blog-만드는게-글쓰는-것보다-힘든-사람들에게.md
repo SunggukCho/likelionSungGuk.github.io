@@ -4,7 +4,6 @@ date: 2020-12-17 12:32:09
 permalink: /:short_year-:month-:day/:title
 categories:
 - jekyll
-- blog
 
 tags:
 - jekyll

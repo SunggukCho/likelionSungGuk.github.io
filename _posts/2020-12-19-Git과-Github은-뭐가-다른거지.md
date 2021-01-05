@@ -4,8 +4,7 @@ date: 2020-12-19 01:30:01
 permalink: /:short_year-:month-:day/:title
 categories:
 - git
-- 개념
-- 번역
+- 헷갈리는 개념 비교
 
 tags: [git, github, dev, devmountain]
 ---

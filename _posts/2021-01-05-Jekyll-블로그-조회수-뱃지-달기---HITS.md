@@ -1,12 +1,11 @@
 ---
 title: Jekyll 블로그 조회수 뱃지 달기 - HITS
-date: 2021-01-01 20:18:01
+date: 2021-01-05 20:18:01
 permalink: /:short_year-:month-:day/:title
 categories:
 - jekyll
-- blog
 
-tags: [jekyll, blog, github pages, 깃헙페이지, 지킬 블로그]
+tags: [jekyll, blog, github pages, 깃헙페이지, 지킬 블로그, hits]
 ---
 
 # 방문자에게 게시글 조회수 보여주는법

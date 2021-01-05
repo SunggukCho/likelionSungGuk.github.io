@@ -4,7 +4,6 @@ date: 2020-12-17 17:32:09
 permalink: /:short_year-:month-:day/:title
 categories:
 - jekyll
-- blog
 
 tags: [blog, jekyll, blog, jekyll theme, NexT theme, 지킬 테마, 지킬 블로그 포스팅, GitHub Pages]
 ---
