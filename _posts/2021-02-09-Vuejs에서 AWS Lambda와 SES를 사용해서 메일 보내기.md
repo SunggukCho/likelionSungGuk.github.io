@@ -1,22 +1,22 @@
+# 보고 따라하기
 ---
 title: Vuejs에서 AWS Lambda와 SES를 사용해서 메일 보내기
 date: 2021-02-09 20:18:01
 permalink: /:short_year-:month-:day/:title
 categories:
+
 - Cloud
 - web/network
 tags: [AWS, Lambda, Vuejs, javascript, email]
 
 ---
-# Vuejs에서 AWS Lambda와 SES를 사용해서 메일 보내기
 
-[TOC]
 
 <완성 모습>
 
-![이메일 폼 입력](AWS람다로메일보내기/Untitled.png)
+![이메일 폼 입력](/assets/img/Untitled.png)
 
-![메일 받은 화면](AWS람다로메일보내기.assets/Untitled 1.png)
+![메일 받은 화면](/assets/img/Untitled 1.png)
 
 
 
@@ -24,7 +24,7 @@ tags: [AWS, Lambda, Vuejs, javascript, email]
 
 (요약: 블로그 잘못 읽으면 골로간다...)
 
-![작성이유](AWS람다로메일보내기.assets/Untitled 2.png)
+![작성이유](/assets/img/Untitled 2.png)
 
 
 
@@ -221,11 +221,11 @@ AWS에서 제공하는 SES(~~요정)~~ 기능을 사용하여 username과 passwo
 
 AWS의 SES(~~요정?~~)는 뭔가 약자로 쓰면 멋있고 복잡한 기능같지만 그 뜻을 보면 생각보다 친근(?)하다. Simple Email Service의 약자로 말그대로 간단한 email 서비스다. 
 
-![SES](AWS람다로메일보내기/Untitled%203.png)
+![SES](/assets/img/Untitled%203.png)
 
 SES를 검색하고 클릭!
 
-![email verify2](AWS람다로메일보내기.assets/Untitled 4.png)
+![email verify2](/assets/img/Untitled 4.png)
 
 Email Address클릭!
 
@@ -233,15 +233,15 @@ Email Address클릭!
 
 email 인증 ㄱㄱ!
 
-![AWS인증메일](AWS람다로메일보내기.assets/Untitled 6.png)
+![AWS인증메일](/assets/img/Untitled 6.png)
 
 *이 화면은 Gmail에서 AWS로부터 받은 메일 화면이다. 붉은 부분의 링크를 클릭하면 인증이 완료된다.*
 
-![email verify3](AWS람다로메일보내기.assets/Untitled 7.png)
+![email verify3](/assets/img/Untitled 7.png)
 
 *인증이 완료되면 pending verification이 `verified`로 변경된다.*
 
-![email SMTP](AWS람다로메일보내기.assets/Untitled 8.png)
+![email SMTP](/assets/img/Untitled 8.png)
 
 
 
@@ -259,27 +259,27 @@ email 인증 ㄱㄱ!
 
 ### 3-1. AWS Lambda에서 함수 생성
 
-![aws lambda1](AWS람다로메일보내기.assets/Untitled 9.png)
+![aws lambda1](/assets/img/Untitled 9.png)
 
 *'Lambda 서버에 대한 걱정없이 코드 실행' 클릭*
 
-![aws lambda2](AWS람다로메일보내기.assets/Untitled 10.png)
+![aws lambda2](/assets/img/Untitled 10.png)
 
 *우상단 '함수 생성' 버튼 클릭*
 
-![aws lambda3](AWS람다로메일보내기/Untitled%2011.png)
+![aws lambda3](/assets/img/Untitled%2011.png)
 
 *함수이름, 런타임을 선택하고 함수생성 (이번에는 example이라는 함수명과 node14.x로 만들었습니다.)*
 
-![aws lambda4](AWS람다로메일보내기.assets/Untitled 12.png)
+![aws lambda4](/assets/img/Untitled 12.png)
 
 *트리거 추가 버튼 클릭*
 
-![aws lambda5](AWS람다로메일보내기.assets/Untitled 13.png)
+![aws lambda5](/assets/img/Untitled 13.png)
 
 *API 게이트웨이*
 
-![aws gateway1](AWS람다로메일보내기.assets/Untitled 14.png)
+![aws gateway1](/assets/img/Untitled 14.png)
 
 *보안 - 열기, CORS 체크는 일단 하지않고 놔두고 나중에 처리 ㄱㄱ*
 
@@ -289,7 +289,7 @@ email 인증 ㄱㄱ!
 
 이 part가 lambda 함수를 작성하는 메인 공간이다.
 
-![aws lambda6](AWS람다로메일보내기.assets/Untitled 15.png)
+![aws lambda6](/assets/img/Untitled 15.png)
 
 *밝은 화면을 눈뜨고 지켜볼 수 없어 aws에서도 dark theme로 바꿔서 쓰는중이라 화면이 다르게 보일 수 있음 ;;*
 
@@ -317,7 +317,7 @@ exports.handler = async (event) => {
 
 Test버튼을 누르면 execution results 창이 나오면서 함수 실행 결과를 보여준다
 
-![aws lambda7](AWS람다로메일보내기.assets/Untitled 16.png)
+![aws lambda7](/assets/img/Untitled 16.png)
 
 성공적으로 통신이 된다면 Response에 statusCode와 Body에 문자열이 담겨있는 것을 확인할 수 있다.
 
@@ -325,11 +325,11 @@ Test버튼을 누르면 execution results 창이 나오면서 함수 실행 결�
 
 ### 3-2. AWS lamda에 로컬 환경과 똑같이 환경설정하기
 
-![로컬파일트리](AWS람다로메일보내기.assets/Untitled 17.png)
+![로컬파일트리](/assets/img/Untitled 17.png)
 
 *로컬환경의 파일트리*
 
-![lambda 파일트리](AWS람다로메일보내기.assets/Untitled 18.png)
+![lambda 파일트리](/assets/img/Untitled 18.png)
 
 *AWS 람다 환경의 파일트리*
 
@@ -352,11 +352,11 @@ AWS lambda에서 터미널을 찾아 헤맸지만 보이지 않아 이 부분에
 1. 로컬환경에서 zip 파일을 만든다.
 2.  작업 버튼을 누르고 나오는 `.zip파일 업로드`로 압축해놓은 zip파일을 AWS에 올린다.
 
-![index.js](AWS람다로메일보내기.assets/Untitled 19.png)
+![index.js](/assets/img/Untitled 19.png)
 
 (이렇게 쉬운 방법이 있었는데 하필 aws-sdk를 사용해 CLI환경에서 하는 방법이 구글링에서 먼저 나와 고생좀 했었다...ㅠ)
 
-![업로드완료](AWS람다로메일보내기.assets/Untitled 20.png)
+![업로드완료](/assets/img/Untitled 20.png)
 
 이제 로컬 환경과 AWS lambda환경이 같아졌다. 여기까지 왔다면 거의 다왔다!
 
@@ -465,11 +465,11 @@ export default {
 3. AWS람다함수의 주소값을 넣어준다
 4. axios를 import 한다
 
-![주소1](AWS람다로메일보내기/Untitled%2021.png)
+![주소1](/assets/img/Untitled%2021.png)
 
 *lambda 화면에서 API게이트웨이를 클릭한다*
 
-![주소2](AWS람다로메일보내기.assets/Untitled 22.png)
+![주소2](/assets/img/Untitled 22.png)
 
 이 붉은색 표시를 한 URL이 함수호출 게이트웨이값이다.
 
@@ -512,13 +512,13 @@ submit: function () {
 
 API Gateway에서 CORS를 허용해 줘야한다. 
 
-![CORS](AWS람다로메일보내기.assets/Untitled 23.png)
+![CORS](/assets/img/Untitled 23.png)
 
 *CORS 클릭*
 
-![CORS2](AWS람다로메일보내기.assets/Untitled 24.png)
+![CORS2](/assets/img/Untitled 24.png)
 
-![CORS3](AWS람다로메일보내기.assets/Untitled 25.png)
+![CORS3](/assets/img/Untitled 25.png)
 
 
 
@@ -661,11 +661,11 @@ exports.handler = async (event, callback) => {
 
 *<완성 모습>*
 
-![완성1](AWS람다로메일보내기.assets/Untitled.png)
+![완성1](/assets/img/Untitled.png)
 
 *사이트에서 이메일 작성하는 폼*
 
-![완성2](AWS람다로메일보내기.assets/Untitled 1-1612852497577.png)
+![완성2](/assets/img/Untitled 1-1612852497577.png)
 
 *G메일로 날아오는 결과*
 
