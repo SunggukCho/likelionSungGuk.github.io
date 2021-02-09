@@ -1,24 +1,13 @@
-# 보고 따라하기
 ---
 title: Vuejs에서 AWS Lambda와 SES를 사용해서 메일 보내기
 date: 2021-02-09 20:18:01
 permalink: /:short_year-:month-:day/:title
-categories:
-
-- Cloud
-- web/network
+categories: [Cloud, web/network]
 tags: [AWS, Lambda, Vuejs, javascript, email]
-
 ---
 
 
-<완성 모습>
-
-![이메일 폼 입력](/assets/img/Untitled.png)
-
-![메일 받은 화면](/assets/img/Untitled 1.png)
-
-
+# 보고 그대로 따라하기
 
 ## 0. 이 문서를 작성하는 이유
 
@@ -27,14 +16,13 @@ tags: [AWS, Lambda, Vuejs, javascript, email]
 ![작성이유](/assets/img/Untitled 2.png)
 
 
-
 처음 이메일 기능을 넣으려 했을 때 한 블로거의 글을 읽었습니다. 마지막 멘트까지 살펴본 결과 '아 그대로 따라하면 쉽게 할 수 있겠구나', '이 정도면 얼마 안걸리겠다' 생각하고 착수했습니다. 
 
 하지만 이 글은 AWS Lambda 사용에 포커스를 맞추고 이메일링에 대해서는 크게 설명하지 않았습니다. 
 
 때문에 오히려 이 블로그글을 보고 따라하다가 중간중간 많은 내용들이 생략되어 있어서 오히려 많이 헤맸습니다.
 
-믿고 그대로 따라했다가 삽질을 많이 했지만, 이제는 오히려 이 글의 목적을 직접 달성하기 위해 다시 글을 작성하게 되었습니다.
+믿고 그대로 따라했다가 삽질을 많이 했지만, 이제는 오히려 이 목적을 직접 달성하기 위해 다시 글을 작성하게 되었습니다.
 
 ![기성룡좌 짤](https://lh3.googleusercontent.com/proxy/e4kkLGKW_IeNcUOZDSOEyCEEbiFs-trofZl1dBWIaTh4NgXWOSUhqUMLhjaG77mfLh2g_3g93LoRmPT2kTM3gJYzxkjmS8JavNgfbp1pGAN2LcZKNDSKErD6cORl9wTlHHkBXnClxYxuNyWlYyYIhYbn)
 
@@ -44,7 +32,6 @@ tags: [AWS, Lambda, Vuejs, javascript, email]
 
 Go Go Go!
 
----
 
 
 
