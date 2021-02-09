@@ -1,16 +1,14 @@
-# Vuejs에서 AWS Lambda와 SES를 사용해서 메일 보내기
 ---
 title: Vuejs에서 AWS Lambda와 SES를 사용해서 메일 보내기
 date: 2021-02-09 20:18:01
 permalink: /:short_year-:month-:day/:title
 categories:
-
 - Cloud
 - web/network
 tags: [AWS, Lambda, Vuejs, javascript, email]
 
 ---
-
+# Vuejs에서 AWS Lambda와 SES를 사용해서 메일 보내기
 
 [TOC]
 
