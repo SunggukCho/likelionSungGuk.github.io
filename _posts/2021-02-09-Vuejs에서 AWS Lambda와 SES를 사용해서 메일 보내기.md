@@ -7,7 +7,7 @@ tags: [AWS, Lambda, Vuejs, javascript, email]
 ---
 
 
-# 보고 그대로 따라하기
+# 보고 그대로 따라하기 쌉가능
 
 ## 0. 이 문서를 작성하는 이유
 
