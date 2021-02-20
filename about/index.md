@@ -81,6 +81,37 @@ type: about
 
 ## [Projects]
 
+#### 소셜 뉴스 큐레이션 플랫폼 NewsHi (뉴하)
+
+>  2021.1.11 ~ 2021.2.19 (6week)
+> 뉴하는 누구나 큐레이터가 될 수 있는 소셜 뉴스 큐레이션 플랫폼입니다.
+> 원하는 큐레이터를 선택하면 큐레이터가 공유하는 기사목록들과 왜 이 뉴스를 추천하고 꼭 봐야하는지에 대한 의견도 확인할 수 있습니다. 또한 빠르게 해당 내용을 확인할 수 있는 기사 요약 기능도 제공합니다.
+> SERVER와 CLIENT를 완벽히 구분하고 REST API를 통해서만 통신하도록 하였습니다.
+> 프로젝트에 대한 보다 자세한 설명은 아래 github repository의 README에 상세히 작성하였습니다.
+
+- 목표
+  - No스크린샷! No 구글드라이브 공유!
+  - URL복사 +붙여넣기만 하면 기사 스크랩 끝!
+  - 여러개의 기사도 한 번에 공유할 수 있는 통합 공유링크 생성
+  - 지금 나에게 필요한 뉴스를 찾아주는 플랫폼
+  - 시간없을 때 알짜배기 기사들만 요약해서 모아 볼 수 있는 플랫폼
+  - 기사를 눈으로 읽기 어려운 상황에서 활용할 수 있는 음성으로 읽는 Text To Speech 기능 제공
+- github repository: wating...
+- intro video: [뉴스하이 소개 영상 (약 5분)](/assets/data/newshi_video.mp4)
+- Team member: 5 
+  - Back-end: 2
+  - Front-end: 3
+- 맡은 역할: Front -end
+  - Main page
+  - 기사 페이지
+  - 텍스트 음성 읽기 (Text To Speech)
+  - 다크모드 지원
+  - 피드백 이메일 보내기 (AWS lambda & AWS SES)
+- 기술스택
+  - ![뉴하 기술스택](index.assets/skillset.png)
+
+
+
 #### 영화추천사이트 WATCHUB
 
 > 2020.11.19 ~ 2020.11.26 (1week)
