@@ -97,6 +97,7 @@ type: about
   - 시간없을 때 알짜배기 기사들만 요약해서 모아 볼 수 있는 플랫폼
   - 기사를 눈으로 읽기 어려운 상황에서 활용할 수 있는 음성으로 읽는 Text To Speech 기능 제공
 - github repository: wating...
+- site link: [뉴스하이](http://13.209.219.14)
 - intro video: [뉴스하이 소개 영상 (약 5분)](https://youtu.be/F5Eb9w7tA2A)
 - Team member: 5 
   - Back-end: 2
