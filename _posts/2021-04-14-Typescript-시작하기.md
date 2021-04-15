@@ -316,7 +316,395 @@ fe.skill = 'TypeScript';
 fe.drink = 'Beer';
 ```
 
+## 4. Enum
+
+> 특정 값들의 **집합**을 의미하는 자료형으로 크게 {숫자형 이넘, 문자형 이넘} 두 가지가 있다
+
+- Enum이라는 개념을 이해하기 어려웠던 이유는, javascript에는 enum이 없었기 때문이다. (하지만 검색해보니 C언어에서는 제공하는 것 같음.)
+
+### 4-1. 숫자형 이넘
+
+```tsx
+enum Direction {
+  Up = 1,
+  Down,
+  Left,
+  Right
+}
+```
+
+특이한 것은 이렇게 선언하면  양방향으로 호출할 수 있는 특이한 자료구조가 된다는 것이다.
+
+```tsx
+console.log(Direction[1])    // "Up"
+console.log(Direction["Up"]) // 1
+console.log(Direction[3])    // "Left"
+```
+
+이와 같이 숫자형 Enum에서 Direction.Up 으로 1값을 얻거나 반대로 Direction[1]로 "Up"값을 얻는 것을 **`리버스 매핑`** 이라고 한다.
+
+이렇게 초기값을 선언해주면 1, 2, 3, 4 의 순서로 1씩 증가하며 할당된다. 만약,
+
+```tsx
+enum Direction {
+	Up, 
+	Down,
+	Left,
+	Right
+}
+```
+
+으로 선언되었다면 Up - 0 , Down - 1, Left - 2, Right - 3이 된다.
+
+### 4-2 숫자형 enum 사용
+
+```tsx
+enum Response {
+  No = 0,
+  Yes = 1,
+}
+
+function respond(recipient: string, message: Response): void {
+  console.log(recipient, message)
+}
+
+respond("Captain Pangyo", Response.Yes);
+
+--------------------
+[LOG]: "Captain Pangyo",  1
+```
+
+### 4-3. 문자형 enum
+
+> 문자형 이넘은 이넘 값 전부 다 특정 문자 또는 다른 이넘 값으로 초기화 해줘야 합니다.
+
+```tsx
+enum Direction {
+    Up = "UP",
+    Down = "DOWN",
+    Left = "LEFT",
+    Right = "RIGHT",
+}
+```
+
+** 복합 enums **
+
+문자와 숫자를 혼합하여 enum을 생성할 수 있으나, 권장하지 않는 방식!
+
+```tsx
+enum BooleanLikeHeterogeneousEnum {
+    No = 0,
+    Yes = "YES",
+}
+```
+
+### 4-4. 런타임 시점에서의 이넘 특징
+
+이넘은 런타임시에 실제 객체 형태로 존재합니다. 예를 들어 아래와 같은 이넘 코드가 있을 때
+
+```tsx
+enum E {
+  X, Y, Z
+}
+
+function getX(obj: { X: number }) {
+  return obj.X;
+}
+getX(E); // 이넘 E의 X는 숫자이기 때문에 정상 동작
+-----
+Quiz. 
+getX(E)값을 변수에 넣어서 출력한다면, 얼마나 나올까?
+```
+
+### 4-5. 컴파일 시점에서의 이넘 특징
+
+```tsx
+enum LogLevel {
+  ERROR, WARN, INFO, DEBUG
+}
+
+// 'ERROR' | 'WARN' | 'INFO' | 'DEBUG';
+type LogLevelStrings = keyof typeof LogLevel;
+
+function printImportant(key: LogLevelStrings, message: string) {
+    const num = LogLevel[key];
+    if (num <= LogLevel.WARN) {
+       console.log('Log level key is: ', key);
+       console.log('Log level value is: ', num);
+       console.log('Log level message is: ', message);
+    }
+}
+printImportant('ERROR', 'This is a message');
+
+-------
+[LOG]: "Log level key is: ",  "ERROR" 
+[LOG]: "Log level value is: ",  0 
+[LOG]: "Log level message is: ",  "This is a message"
+```
+
+### 4-6. Typescript enum을 사용하는 이유
+
+Enum은 추상화의 수단이다.
+
+다국어 코드 (Language Code)를 할당한다고 생각해보자
+
+```tsx
+type LanguageCode = 'ko' | 'en' | 'ja' | 'zh' | 'es'
+
+const code: LanguageCode = 'ko'
+
+console.log(code) // [LOG]: "ko"
+
+하지만 
+cost code: LanguageCode = 'hahahaha'
+와 같이 코드를 짜면 typescript에서 에러로 표시해준다.
+```
+
+이것도 좋지만 데이터 양이 많아지면 가독성이 많이 떨어진다.
+
+우리가 원하는 것은 korean을 검색하면 'ko'라는 코드가 나왔으면 하는 것이고 기존 방식으로는 다음과 같이 두 가지 방법이 있다.
+
+```tsx
+// 이렇게 하면 언어 코드가 위아래에 중복되고
+const korean = 'ko'
+const english = 'en'
+const japanese = 'ja'
+const chinese = 'zh'
+const spanish = 'es'
+type LanguageCode = 'ko' | 'en' | 'ja' | 'zh' | 'es'
+let code: LanguageCode = english
+console.log(code) // "en"
+```
+
+```tsx
+// 이렇게 하면 코드가 너무 길어집니다
+const korean = 'ko'
+const english = 'en'
+const japanese = 'ja'
+const chinese = 'zh'
+const spanish = 'es'
+type LanguageCode = typeof korean | typeof english | typeof japanese | typeof chinese | typeof spanish
+let code: LanguageCode = spanish
+console.log(code) // "es"
+```
+
+이러한 이유 때문에 리터럴의 타입과 값에 이름을 붙인 `enum`을 활용하면 가독성을 크게 높일 수 있습니다.
+
+```tsx
+enum LanguageCode {
+  korean = 'ko',
+  english = 'en',
+  japanese = 'ja',
+  chinese = 'zh',
+  spanish = 'es',
+}
+// 여기서 
+// LanguageCode.korean === 'ko'
+// (의미상) LanguageCode === 'ko' | 'en' | 'ja' | 'zh' | 'es'
+const code: LanguageCode = LanguageCode.korean
+console.log(code) // "ko"
+```
+
+### 4-7. Typescript enum을 사용하지 않는 이유
+
+### Tree-shaking은 무엇인가요?
+
+Tree-shaking이란 간단하게 말해 사용하지 않는 코드를 삭제하는 기능을 말합니다. 나무를 흔들면 죽은 잎사귀들이 떨어지는 모습에 착안해 Tree-shaking이라고 부릅니다. Tree-shaking을 통해 export했지만 아무 데서도 import하지 않은 모듈이나 사용하지 않는 코드를 삭제해서 번들 크기를 줄여 페이지가 표시되는 시간을 단축할 수 있습니다.
+
+하지만 enum을 사용하게 되면 Tree-shaking이 되지 않습니다.
+
+결론적으로  Tree-shaking 관점에서 보았을 때 아래와 같은 순서로 사용하시길 추천하며 글을 마치겠습니다.
+
+> Union Types > const enum > enum
+
+**정리**
+
+- 같은 ‘종류’를 나타내는 여러 개의 숫자 혹은 문자열을 다뤄야 하는데, 
+각각 적당한 이름을 붙여서 코드의 가독성을 높이고 싶다면 enum을 사용!
+
+## 5. 연산자를 이용한 타입 정의
+
+### 5-1. Union Type ( | )
+
+유니온 타입(Union Type)이란 자바스크립트의 OR 연산자(||)와 같이 A이거나 B이다 라는 의미의 타입
+
+```tsx
+function logText(text: string | number) {
+  // ...
+}
+```
+
+- text는 string이거나 (OR || ) number이다. 즉, 둘 다 올 수 있다는 뜻.
+- 이처럼 `|` 연산자를 이용하여 타입을 여러 개 연결하는 방식을 `유니온 타입 정의 방식` 이라 부른다.
+
+```tsx
+function getAge(age: number | string) {
+  if (typeof age === 'number') {
+    age.toFixed(); // 정상 동작, age의 타입이 `number`로 추론되기 때문에 숫자 관련된 API를 쉽게 자동완성 할 수 있다.
+    return age;
+  }
+  if (typeof age === 'string') {
+    return age;
+  }
+  return new TypeError('age must be number or string');
+}
+console.log(getAge(10))
+console.log(getAge('Hello World'))
+console.log(getAge(true))
+--- 출력 ---
+[LOG]: 10 
+[LOG]: "Hello World" 
+[LOG]: age must be number or string
+```
+
+### 5-2. Intersection Type ( & )
+
+여러 타입을 모두 만족하는 하나의 타입을 의미.
+
+```tsx
+interface Person {
+  name: string;
+  age: number;
+}
+interface Developer {
+  name: string;
+  skill: number;
+}
+type Capt = Person & Developer;
+```
+
+```tsx
+// Capt의 타입은
+
+{
+  name: string;
+  age: number;
+  skill: string;
+}
+```
+
+![Intersection Type](https://joshua1988.github.io/ts/assets/img/intersection-diagram.01f4fdfe.png)
+
+### 5-3. Union Type을 쓸 때 주의할 점
+
+```tsx
+interface Person {
+  name: string;
+  age: number;
+}
+interface Developer {
+  name: string;
+  skill: string;
+}
+function introduce(someone: Person | Developer) {
+  someone.name; // O 정상 동작
+  someone.age; // X 타입 오류 -> 타입스크립트에서 빨간줄로 표시해줌
+  someone.skill; // X 타입 오류 -> 타입스크립트에서 빨간줄로 표시해줌
+}
+```
+
+유니온 타입은 A도 될 수 있고 B도 될 수 있는 타입이지라고 생각하면 파라미터의 타입이 Person도 되고 Developer도 될테니까 함수 안에서 당연히 이 인터페이스들이 제공하는 속성들인 age나 skill를 사용할 수 있겠지라고 생각할 수 있습니다. 
+
+하지만, 타입스크립트 관점에서는 introduce() 함수를 호출하는 시점에 Person 타입이 올지 Developer 타입이 올지 알 수가 없기 때문에 어느 타입이 들어오든 간에 오류가 안 나는 방향으로 타입을 추론하게 됩니다.
+
+따라서 위의 예시 같은 경우에는 의도와는 달리 [someone.name](http://someone.name) 만 정상적으로 작동하게 됩니다.
+
+## 6. Class
+
+### 6-1. Readonly
+
+```tsx
+class Developer {
+    readonly name: string;
+    constructor(theName: string) {
+        this.name = theName;
+    }
+}
+let john = new Developer("John");
+john.name = "John"; // error! name is readonly.
+console.log(john)
+--- 출력 ---
+[LOG]: Developer: {
+  "name": "John"
+}
+```
+
+### 6-2. Accessor
+
+타입스크립트는 객체의 특정 속성의 접근과 할당에 대해 제어할 수 있습니다. 이를 위해선 해당 객체가 클래스로 생성한 객체여야 합니다. 아래의 간단한 예제를 봅시다.
+
+```tsx
+class Developer {
+  name: string;
+}
+const josh = new Developer();
+josh.name = 'Josh Bolton';
+```
+
+위 코드는 클래스로 생성한 객체의 `name` 속성에 `Josh Bolton`이라는 값을 대입한 코드입니다. 이제 `josh`라는 객체의 `name` 속성은 `Josh Bolton`이라는 값을 갖겠죠.
+
+여기서 만약 `name` 속성에 제약 사항을 추가하고 싶다면 아래와 같이 `get`과 `set`을 활용합니다.
+
+```tsx
+class Developer {
+  private name: string;
+  
+  get name(): string {
+    return this.name;
+  }
+
+  set name(newValue: string) {
+    if (newValue && newValue.length > 5) {
+      throw new Error('이름이 너무 깁니다');
+    }
+    this.name = newValue;
+  }
+}
+const josh = new Developer();
+josh.name = 'Josh Bolton'; // Error
+josh.name = 'Josh';
+```
+
+TIP!
+get만 선언하고 set을 선언하지 않는 경우에는 자동으로 readonly로 인식됩니다.
+
+### 6-3. Abstract Class
+
+추상 클래스(Abstract Class)는 인터페이스와 비슷한 역할을 하면서도 조금 다른 특징을 갖고 있습니다. 추상 클래스는 특정 클래스의 상속 대상이 되는 클래스이며 좀 더 상위 레벨에서 속성, 메서드의 모양을 정의합니다.
+
+```tsx
+abstract class Developer {
+  abstract coding(): void; // 'abstract'가 붙으면 상속 받은 클래스에서 무조건 구현해야 함
+  drink(): void {
+    console.log('drink sth');
+  }
+}
+
+class FrontEndDeveloper extends Developer {
+  coding(): void {
+    // Developer 클래스를 상속 받은 클래스에서 무조건 정의해야 하는 메서드
+    console.log('develop web');
+  }
+  design(): void {
+    console.log('design web');
+  }
+}
+const dev = new Developer(); // error: cannot create an instance of an abstract class
+const josh = new FrontEndDeveloper();
+josh.coding(); // develop web
+josh.drink(); // drink sth
+josh.design(); // design web
+```
+
+
+
 
 ---
 References
 https://joshua1988.github.io/ts/
+
+[TypeScript enum을 사용하는 이유](https://medium.com/@seungha_kim_IT/typescript-enum을-사용하는-이유-3b3ccd8e5552)
+
+[TypeScript enum을 사용하지 않는 게 좋은 이유](https://engineering.linecorp.com/ko/blog/typescript-enum-tree-shaking/)
+
+[C언어 Enum](https://dojang.io/mod/page/view.php?id=480)
