@@ -1,5 +1,5 @@
 ---
-title: 타입스크립트 - 실습 QUIZ
+title: 타입스크립트 실습 QUIZ
 date: 2021-04-27 10:18:01
 permalink: /:short_year-:month-:day/:title
 categories: [web/network, frontend]
