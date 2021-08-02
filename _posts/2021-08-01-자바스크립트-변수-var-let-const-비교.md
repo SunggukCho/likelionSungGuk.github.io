@@ -71,4 +71,6 @@ name="홍길동"
 
 ---
 Ref.
-[유튜브 코딩앙마](https://www.youtube.com/watch?v=ocGc-AmWSnQ&list=PLZKTXPmaJk8JZ2NAC538UzhY_UNqMdZB4)
+
+[유튜브 코딩앙마 채널](https://www.youtube.com/watch?v=ocGc-AmWSnQ&list=PLZKTXPmaJk8JZ2NAC538UzhY_UNqMdZB4)
+
