@@ -1,6 +1,6 @@
 ---
-title: 자바스크립트 중급 1. 변수: var, let, const
-date: 2021-08-03 23:18:01
+title: 프론트 개발자라면 자바스크립트  변수: var, let, const 꼭 알아야할 차이점 
+date: 2021-08-05 23:18:01
 permalink: /:short_year-:month-:day/:title
 categories: [web/network, frontend]
 tags: [Javascript, let, var, const, 변수]
