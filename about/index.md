@@ -4,33 +4,39 @@ type: about
 ---
 
 ---
-## [Information]
+## [Contact]
 
 - Email: sung9gi@gmail.com
-- Phone: +82-10-7120-7156
-- Blog: [Blog link](https://likelionSungGuk.github.io)
+- Phone: 010-7120-7156
+- Blog: [likelionSungGuk.github.io](https://likelionSungGuk.github.io)
 - github: [Github link](https://github.com/likelionSungGuk/) 
+- Portfolio: [성국's Portfolio'](https://www.notion.so/5676722e7feb4cf782a79676d0cb13d5)
 
 
 
-## [Objectives]
+## [소개]
 
-> 꾸준히 성장하는 개발자 조성국입니다.
+> 꾸준히 성장하는 프론트엔드 개발자 조성국입니다.
+>
+> - 1px하나도 놓치지 않는 꼼꼼함
+> - 목표를 완수할 때까지 쓰러지지 않는 책임감
+> - 목표를 완수하고 얻는 짜릿한 성취감
+> - 쿵짝이 잘 맞는 동료와 같은 목표를 향해 몰입하는 것
+> - 최고의 결과를 위해 치열하게 토의하는 것
+> - 매일매일 성장하는 것
+> 을 즐기며 개발하고 있습니다.
 
 
 
-## [Experiences & Educations]
+## [경력]
 
-#### SAMSUNG SOFTWARE ACADEMY FOR YOUTH 삼성청년소프트웨어 아카데미
+#### 텐일레븐
 
-> 2020.07 ~ present
+> 2021.07 ~
 
-#### 교육내용
+- 텐일레븐은 컨스트럭테크 No.1을 향해 달려가고 있습니다.
 
-- Language: Python, javascript
-- Framework: Vuejs
-- Algorithms
-- Projects
+- React와 Typescript를 사용하여 건축설계 솔루션 BUILDIT의 프론트엔드 개발을 담당하고 있습니다.
 
 
 
@@ -38,48 +44,78 @@ type: about
 
 > 2017.07 ~ 2019. 03
 
-#### Role 1. Project Manager
+- 빅데이터 솔루션 웹 어플리케이션과 모바일 설문조사 어플리케이션을 제작 운영하던 스타트업에 공동 창업자로 참여했습니다.
+- Ruby On Rails와 Python을 사용하여 웹 어플리케이션 개발과 모바일 어플리케이션 기획, 마케팅 등을 담당했습니다.
 
-- [모두의 Q&A] 라는 모바일 어플리케이션 개발 project managing 업무를 맡아 android, 서버, 디자이너와 협업하여 완성하였습니다. 5만명 이상의 다운로드를 달성하였습니다.
 
-#### Role 2. Marketing Executer
 
-- [모두의 Q&A] 어플리케이션의 marketing을 담당하였습니다. Google Ads, Facebook Ads등을 활용하였고, Facebook page 운영, 오프라인 박람회 부스 운영 등을 진행했습니다.
+## [교육]
 
-#### Role 3. Web application developer
+#### SAMSUNG SOFTWARE ACADEMY FOR YOUTH 삼성청년소프트웨어 아카데미
 
-- [Pluto]라는 웹 어플리케이션을 개발하였습니다. Ruby on Rails를 활용했으며 Machine Learning으로 학습된 데이터를 받아 웹 상에서 시각화하는 파트를 맡았습니다.
+> 2020.07 ~ 2021. 06 (약 1600시간)
+
+#### 교육내용
+
+- Language: Python, javascript
+- Framework: Vuejs, React, django
+- 자료구조와 알고리즘
+- 3가지 프로젝트
+
+
+
+#### SKKU 성균관대학교
+
+> 2012 ~ 2020.
+
+글로벌 경영학 전공
+
+
+
+## [자격 & 어학 & 특허]
+
+#### 정보처리기사 2021. 6
+
+자격번호: 21201100985F
+
+
+
+#### OPIC (영어)
+
+등급: IH
+
+취득: 2020. 03
+
+
+
+#### 사용자 반응 데이터 분석 방법 및 장치 특허 출원
+
+공개번호: 10-2019-0017597
+출원번호: 10-2017-0117662
+요약: 본 발명의 일 실시예에 따른 사용자 반응 데이터 분석 방법이 제공된다. 상기 방법은 사용자 반응을 포함하는 적어도 하나의 텍스트를 수신하는 단계, 적어도 하나의 텍스트를 매트릭스로 수치화하는 단계, 적어도 하나의 텍스트에 대한 수치화된 매트릭스에 기초하여 텍스트가 가지는 긍정 또는 부정에 대한 경향성을 나타내는 스코어를 예측하도록 구성된 엔진을 이용하여, 적어도 하나의 텍스트에 대한 스코어를 결정하는 단계 및 결정된 스코어를 제공하는 단계를 포함한다.
 
 
 
 ---
 
-## [Skills]
+## [스킬]
 
 #### Languages
 
 - python
 - ruby
-- javascript
+- javascript / typescript
 
 
 
 #### Frameworks
 
-- django
-- ruby on rails
-- Vuejs
+- React / Vuejs
+- django / ruby on rails
 
 
 
-#### ETC
-
-- git & github
-- zeplin
-
-
-
-## [Projects]
+## [프로젝트]
 
 #### 소셜 뉴스 큐레이션 플랫폼 NewsHi (뉴하)
 
