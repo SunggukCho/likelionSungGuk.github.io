@@ -10,13 +10,13 @@ tags: [javascript, prototype, object]
 
 ## :bulb: 핵심 체크 문답
 
-### :one: prototype이란? 
+## :one: prototype이란? 
 
 자바스크립트의 모든 object에 있는 숨겨진 속성.
 
 
 
-### :two: prototype에 접근하는 방법은?
+## :two: prototype에 접근하는 방법은?
 
 1. getPrototypeOf()
 
@@ -35,7 +35,7 @@ tags: [javascript, prototype, object]
 
 
 
-### :three: prototype 값을 변경하는 방법은?
+## :three: prototype 값을 변경하는 방법은?
 
 1. setPrototypeOf()
 
@@ -51,7 +51,7 @@ tags: [javascript, prototype, object]
 
 
 
-### :four: prototype의 특징
+## :four: prototype의 특징
 
 - 체이닝
 
@@ -81,8 +81,4 @@ Object.setPrototypeOf(frontDev, programmer);
   frontDev.__proto__.proto__.name  // => mike	(from person)
   frontDev.__proto__.language 	// => javascript (from programmer)
   ```
-
-  
-
-- 
 
