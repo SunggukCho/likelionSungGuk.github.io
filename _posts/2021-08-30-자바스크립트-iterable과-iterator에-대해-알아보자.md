@@ -15,9 +15,9 @@ tags: [javascript, iterable, iterator, ES6]
 
 
 
-### 이터러블의 조건
+### 이터러블의 조건 
 
-1. 순회 할수 있는 데이터를 가지고 있어야한다.
+1. 순회 할수 있는 데이터를 가지고 있어야한다. 
 2. 전역 “well-known” symbol 인`Symbol.iterator` 을 메서드로 가지고 있어야한다. 또한 이 메서드는 #3 , #6 에 따라 구현되어야 한다.
 3. `Symbol.iterator` 메서드는 **“iterator” 객체를 반환**해야합니다
 4. “iterator” 객체는 **반드시 next 라고 하는 메서드를 가져야합니다.** (지난 Generator 포스팅에서 봤던 개념입니다.)
