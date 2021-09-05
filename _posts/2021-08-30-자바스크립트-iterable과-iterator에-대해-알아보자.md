@@ -6,7 +6,7 @@ categories: [frontend, web/network]
 tags: [javascript, iterable, iterator, ES6]
 ---
 
-# 자바스크립트 iterable과 iterator에 대해 알아보자
+# 자바스크립트 iterable과 iterator에 대해 알아보자 
 ## 이터러블 (iterable)이란?
 
 > 반복 가능한 객체 (ES2015에 추가된 문법)
