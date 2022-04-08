@@ -19,7 +19,7 @@ tags:
 
 ## 문제 원인
 
-![image.png](/assets/img/javascript input 정수만 입력받기1.png)
+![image.png](/assets/img/javascriptinput정수만입력받기1.png)
 
 문제 원인은 자바스크립트 소수의 특징입니다.
 
@@ -82,7 +82,7 @@ javascript에서는 타언어와 다르게 숫자 타입이 딱 하나밖에 없
 
 하지만, 숫자입력값이 아닌 다른 입력값이 들어오는 경우 `NaN` 을 띄워주는 의도하지 않은 동작이 일어납니다.
 
-![숫자가 아닌 입력을 하면 NaN을 띄워주는 의도치 않은 동작을 하게 됩니다.](/assets/img/javascript input 정수만 입력받기2.png)
+![숫자가 아닌 입력을 하면 NaN을 띄워주는 의도치 않은 동작을 하게 됩니다.](/assets/img/javascriptinput정수만입력받기2.png)
 
 숫자가 아닌 입력을 하면 NaN을 띄워주는 의도치 않은 동작을 하게 됩니다.
 
@@ -111,11 +111,11 @@ Text의 경우 input창의 왼쪽에 정렬이 되고 unit 설정은 따로 없�
 
 Number의 경우 input창의 오른쪽에 정렬이 되고 unit은 props를 받습니다.
 
-![TEXT](/assets/img/javascript input 정수만 입력받기3.png)
+![TEXT](/assets/img/javascriptinput정수만입력받기3.png)
 
 TEXT
 
-![Number](/assets/img/javascript input 정수만 입력받기4.png)
+![Number](/assets/img/javascriptinput정수만입력받기4.png)
 
 Number
 
@@ -125,6 +125,6 @@ Number
 
 따라서 ProjectFieldInput component에서 align=”right”을 props해주면 우측정렬을 할 수 있습니다.
 
-![Untitled](/assets/img/javascript input 정수만 입력받기5.png)
+![Untitled](/assets/img/javascriptinput정수만입력받기5.png)
 
 —끝—
