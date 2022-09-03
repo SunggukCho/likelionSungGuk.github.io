@@ -1,5 +1,5 @@
 ---
-title: Jest로 리액트에서 유닛 테스트 하기
+title: input 정수만 입력받기
 date: 2022-07-08 18:32:09
 permalink: /:short_year-:month-:day/:title
 categories:
