@@ -2,9 +2,9 @@
 title: "react-rewired 사용해서 eject없이 CRA에babel설정 추가하기"
 date: "2022.03.23"
 tags:
-	- babel
-	- cra
-	- react-rewired
+  - babel
+  - cra
+  - react-rewired
 ---
 
 
