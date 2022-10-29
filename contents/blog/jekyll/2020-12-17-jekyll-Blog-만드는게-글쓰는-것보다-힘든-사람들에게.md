@@ -6,8 +6,8 @@ tags:
    - jekyll theme
    - ruby
    - rails
-   - blog
    - mac
+   - 블로그
    - 지킬 테마
 ---
 

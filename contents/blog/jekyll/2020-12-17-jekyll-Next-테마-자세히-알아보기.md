@@ -2,7 +2,6 @@
 title: "jekyll Next 테마 자세히 알아보기"
 date: "2020.12.17"
 tags: [
-  - blog
   - jekyll
   - jekyll theme
   - NexT theme
