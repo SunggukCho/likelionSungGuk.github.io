@@ -1,9 +1,9 @@
 ---
 title: "jekyll Next 테마 자세히 알아보기"
 date: "2020.12.17"
-tags: [
+tags:
   - jekyll
-  - jekyll theme
+  - jekyll-theme
   - NexT theme
   - 지킬 테마
   - GitHub Pages

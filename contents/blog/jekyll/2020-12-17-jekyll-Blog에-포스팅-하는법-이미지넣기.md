@@ -1,8 +1,7 @@
 ---
 title: "jekyll Blog에 포스팅 하는법-이미지넣기"
 date: "2020.12.17"
-tags: 
-  - jekyll
+tags:
   - jekyll
   - theme
   - NexT theme
