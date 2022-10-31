@@ -9,8 +9,10 @@ import {
   ExtensionsIcon,
   AccountIcon,
   SettingsGearIcon,
+  GithubIcon,
+  LinkedinIcon
 } from "@src/assets/icons";
-import { DRACULAR_BACKGROUND_LIGHT_DARK, GRAY_400 } from "@src/constants/palette";
+import { DRACULAR_BACKGROUND_LIGHT_DARK, GRAY_100 } from "@src/constants/palette";
 import ThemeSwitcher from "@src/components/common/theme-switcher";
 
 import ExplorerSection from "../explorer-section";
@@ -20,6 +22,7 @@ import SearchSection from "../search-section";
 import ActionItem from "./action-item";
 
 const GITHUB_URL = "https://github.com/likelionSungGuk";
+const LINKEDIN_URL = "https://www.linkedin.com/in/%EC%84%B1%EA%B5%AD-%EC%A1%B0-005867156/";
 
 export const ACTIVITY_BAR_WIDTH = "3rem";
 
@@ -107,6 +110,10 @@ export default function ActivityBar({
     window.open(GITHUB_URL, "_blank");
   };
 
+  const openLinkedinLink = () => {
+    window.open(LINKEDIN_URL, "_blank");
+  };
+
   return (
     <Wrapper onKeyDown={onKeyDown}>
       <Ul>
@@ -123,8 +130,8 @@ export default function ActivityBar({
       </Ul>
       <Ul>
         <ThemeSwitcher />
-        <ActionItem Icon={AccountIcon} onClick={openGithubLink} />
-        <ActionItem Icon={SettingsGearIcon} onClick={() => null} />
+        <ActionItem Icon={GithubIcon} onClick={openGithubLink} />
+        <ActionItem Icon={LinkedinIcon} onClick={openLinkedinLink} />
       </Ul>
     </Wrapper>
   );
