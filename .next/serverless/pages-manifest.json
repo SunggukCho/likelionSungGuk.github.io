@@ -1,7 +1,0 @@
-{
-  "/404": "pages/404.js",
-  "/blog/[...id]": "pages/blog/[...id].js",
-  "/": "pages/index.js",
-  "/posts": "pages/posts.js",
-  "/_error": "pages/_error.js"
-}

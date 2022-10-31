@@ -3,10 +3,6 @@ title: "jekyll Blog 만드는게 글쓰는 것보다 힘든 사람들에게"
 date: "2020.12.17"
 tags:
   - jekyll
-  - jekyll-theme
-  - ruby
-  - rails
-  - mac
   - 블로그
   - 지킬 테마
 ---

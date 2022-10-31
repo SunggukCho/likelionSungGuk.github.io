@@ -4,7 +4,7 @@ date: "2021.02.09"
 tags: 
   - AWS
   - Lambda
-  - Vuejs
+  - vue
   - javascript
   - email
 ---

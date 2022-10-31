@@ -2,11 +2,8 @@
 title: "자바스크립트 변수-var, let, const 꼭 알아야할 차이점"
 date: "2021.08.09"
 tags: 
-  - Javascript
-  - let
-  - var
-  - const
-  - 변수
+  - javascript
+  - JS변수(var, let, const)
 ---
 
 # 자바스크립트 변수 var, let, const 비교

@@ -3,8 +3,6 @@ title: "Javascript 자주쓰는 내장 함수 복습하기"
 date: "2021.03.31"
 tags: 
   - javascript
-  - js
-  - vanillaJS
   - es6
 ---
 

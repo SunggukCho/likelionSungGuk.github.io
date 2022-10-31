@@ -3,8 +3,6 @@ title: "Typescript 시작하기"
 date: "2021.04.14"
 tags: 
   - typescript
-  - ts
-  - 타입스크립트
 ---
 
 

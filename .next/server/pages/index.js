@@ -18,7 +18,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_components_home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @src/components/home */ "./src/components/home/index.ts");
 
 
-var _jsxFileName = "C:\\Users\\sungkook\\Documents\\dev\\vscode-theme\\pages\\index.tsx";
+var _jsxFileName = "C:\\Users\\sungkook\\Documents\\dev\\likelionSungGuk.github.io\\pages\\index.tsx";
 
 
 
@@ -59,7 +59,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 
-var _jsxFileName = "C:\\Users\\sungkook\\Documents\\dev\\vscode-theme\\src\\components\\common\\seo\\index.tsx";
+var _jsxFileName = "C:\\Users\\sungkook\\Documents\\dev\\likelionSungGuk.github.io\\src\\components\\common\\seo\\index.tsx";
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
@@ -258,7 +258,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _index_style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.style */ "./src/components/home/welcome/index.style.ts");
 
-var _jsxFileName = "C:\\Users\\sungkook\\Documents\\dev\\vscode-theme\\src\\components\\home\\welcome\\index.tsx";
+var _jsxFileName = "C:\\Users\\sungkook\\Documents\\dev\\likelionSungGuk.github.io\\src\\components\\home\\welcome\\index.tsx";
 
 function Welcome() {
   return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_index_style__WEBPACK_IMPORTED_MODULE_1__.default.Wrapper, {

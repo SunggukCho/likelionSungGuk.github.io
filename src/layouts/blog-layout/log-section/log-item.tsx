@@ -74,6 +74,7 @@ const Wrapper = styled.li`
 
   &:hover {
     background-color: ${({ theme }) => `${theme.colors.scheme.$gray300}`};
+    cursor: pointer
   }
 `;
 

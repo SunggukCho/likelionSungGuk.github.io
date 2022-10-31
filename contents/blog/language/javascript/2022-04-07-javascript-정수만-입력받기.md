@@ -3,9 +3,6 @@ title: "input 정수만 입력받기"
 date: "2022.07.08"
 tags:
   - javascript
-  - test
-  - jest
-  - tdd
 ---
 
 # javascript input 정수만 입력받기

@@ -42,7 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:16.11.11"],
             ["@types/prismjs", "npm:1.16.6"],
             ["@types/react", "npm:17.0.8"],
-            ["@types/styled-components", "npm:5.1.9"],
+            ["@types/styled-components", "npm:5.1.26"],
             ["@types/webpack-env", "npm:1.16.0"],
             ["babel-plugin-transform-define", "npm:2.0.0"],
             ["dotenv", "npm:16.0.0"],
@@ -1836,10 +1836,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/styled-components", [
-        ["npm:5.1.9", {
-          "packageLocation": "./.yarn/cache/@types-styled-components-npm-5.1.9-21434b5cd5-99b5e069a0.zip/node_modules/@types/styled-components/",
+        ["npm:5.1.26", {
+          "packageLocation": "./.yarn/cache/@types-styled-components-npm-5.1.26-aabda06611-84f53b3101.zip/node_modules/@types/styled-components/",
           "packageDependencies": [
-            ["@types/styled-components", "npm:5.1.9"],
+            ["@types/styled-components", "npm:5.1.26"],
             ["@types/hoist-non-react-statics", "npm:3.3.1"],
             ["@types/react", "npm:17.0.8"],
             ["csstype", "npm:3.0.8"]
@@ -9958,7 +9958,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:16.11.11"],
             ["@types/prismjs", "npm:1.16.6"],
             ["@types/react", "npm:17.0.8"],
-            ["@types/styled-components", "npm:5.1.9"],
+            ["@types/styled-components", "npm:5.1.26"],
             ["@types/webpack-env", "npm:1.16.0"],
             ["babel-plugin-transform-define", "npm:2.0.0"],
             ["dotenv", "npm:16.0.0"],

@@ -40,7 +40,7 @@ function MyApp({ Component, pageProps, posts }: MyAppProps) {
       <Head>
         <title>{`Frontend Dev | likelionSungGuk Blog`}</title>
         <meta name="description" content="Frontend Dev likelionSungGuk Blog" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" />
       </Head>
       <ThemeContextProvider defaultTheme="dark">
         <AppContextProvider posts={posts}>

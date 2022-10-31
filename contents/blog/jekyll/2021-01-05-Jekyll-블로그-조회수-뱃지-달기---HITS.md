@@ -3,9 +3,6 @@ title: "Jekyll 블로그 조회수 뱃지 달기 - HITS"
 date: "2021.01.05"
 tags: 
   - jekyll
-  - github pages
-  - 깃헙페이지
-  - 지킬 블로그
   - hits
 ---
 
