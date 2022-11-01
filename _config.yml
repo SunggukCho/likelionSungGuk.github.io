@@ -6,7 +6,7 @@
 # Site
 title: likelionSungGuk Blog
 subtitle: 개발자 조성국의 블로그입니다.
-description: Python, django, algorithm, Computer science, IT 트렌드
+description: JS, TS, REACT와 스타트업에서 일하는 개발 이야기를 다루고 있습니다.
 author: likelionSungGuk 조성국
 Support language: en, ko
 language: en
@@ -232,7 +232,7 @@ social_icons:
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-avatar: /assets/images/profile.jpg
+avatar: /assets/images/profile2.jpg
 
 
 # Table Of Contents in the Sidebar
