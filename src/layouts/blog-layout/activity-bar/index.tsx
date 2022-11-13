@@ -20,6 +20,7 @@ import LogSection from "../log-section";
 import SearchSection from "../search-section";
 
 import ActionItem from "./action-item";
+import TagSection from "../tag-section";
 
 const GITHUB_URL = "https://github.com/likelionSungGuk";
 const LINKEDIN_URL = "https://www.linkedin.com/in/%EC%84%B1%EA%B5%AD-%EC%A1%B0-005867156/";
@@ -50,9 +51,9 @@ export const ACTION_ITEMS: ActionItemType[] = [
     content: <LogSection />,
   },
   {
-    label: "RUN AND DEBUG",
+    label: "TAGS",
     Icon: RunAndDebugIcon,
-    content: "RUN AND DEBUG",
+    content: <TagSection />,
   },
   {
     label: "EXTENSIONS",

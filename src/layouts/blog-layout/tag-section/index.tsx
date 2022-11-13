@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import Search from "./search"
 
-export default function SearchSection() {
+import TagsSection from "./tags";
+
+export default function TagSection() {
   return (
     <Wrapper>
-      <h1>SearchSection</h1>
-      <Search />
+      <TagsSection />
     </Wrapper>
   );
 }
