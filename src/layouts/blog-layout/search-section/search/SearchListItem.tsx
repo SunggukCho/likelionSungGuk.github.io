@@ -8,8 +8,6 @@ export type SearchListItemProps = {
   title: string;
   isSelected?: boolean;
   onClick?: () => void;
-  onClose?: () => void;
-  showCloseButton?: boolean;
 };
 
 export default function SearchListItem({
@@ -17,16 +15,8 @@ export default function SearchListItem({
   title,
   isSelected = false,
   onClick = () => null,
-  onClose = () => null,
-  showCloseButton = false,
 }: SearchListItemProps) {
   const [isHovered, setIsHovered] = useState(false);
-
-  const handleCloseClick = (e: MouseEvent<SVGSVGElement>) => {
-    e.stopPropagation();
-
-    onClose();
-  };
 
   return (
     <Wrapper
