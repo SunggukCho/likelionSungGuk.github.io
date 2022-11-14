@@ -1,16 +1,16 @@
-import React from 'react'
-
-import AccordionSection from "@src/components/common/accordion-section";
-import Tag from "@src/components/common/tag";
-import { useAppContext } from "@src/contexts/app";
+import React, { useState } from 'react'
+import { Post } from "@src/types/post.type";
 import SearchInput from "./SearchInput"
+import SearchList from "./SearchList"
 
 export default function Search() {
-  const {
-    state: { posts },
-  } = useAppContext();
+  const [searchList, setSearchList] = useState<Post[]>([])
+  console.log('searchList', searchList)
 
   return (
-    <SearchInput />
+    <>
+      <SearchInput setSearchList={setSearchList} />
+      <SearchList searchedList={searchList} />
+    </>
   )
 }

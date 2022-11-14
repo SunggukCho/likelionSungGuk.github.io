@@ -1,17 +1,28 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import styled from "styled-components";
 import { useAppContext } from "@src/contexts/app";
+import { Post } from "@src/types/post.type";
 
-const SearchInput = () => {
+interface SearchInputProps {
+  setSearchList: (list: Post[]) => void;
+}
+
+const SearchInput = ({ setSearchList }: SearchInputProps) => {
   const {
     state: { posts },
   } = useAppContext();
 
-  const searchKeyword = useRef("")
+  const [searchKeyword, setSearchKeyword] = useState<string>("")
 
   const searchPosting = () => {
-    const search = searchKeyword.current.value
-    console.log('search', search, posts)
+    const lowerCaseofSearchKeyWord = searchKeyword.toLowerCase()
+    const searchList = posts.filter((post: Post) => {
+      return (
+        post.meta.title.toLowerCase().includes(lowerCaseofSearchKeyWord) ||
+        post.meta.description.toLowerCase().includes(lowerCaseofSearchKeyWord)
+      )
+    })
+    setSearchList([...searchList])
   }
 
   const handleSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -25,7 +36,8 @@ const SearchInput = () => {
       <StyledInput 
         type="text"
         name="searchKeyword"
-        ref={searchKeyword}
+        value={searchKeyword}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>)=>setSearchKeyword(e.target.value)}
         onKeyDown={handleSubmit}
       />
       <StyledSubmit
