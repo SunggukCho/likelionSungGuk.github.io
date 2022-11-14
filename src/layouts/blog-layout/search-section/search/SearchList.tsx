@@ -9,7 +9,6 @@ interface SearchListProps {
 
 const SearchList = ({ searchedList }: SearchListProps) => {
   const {
-    state: { posts, openPosts, currentPostId },
     action: { selectPost, closePost },
   } = useAppContext();
 
@@ -17,7 +16,7 @@ const SearchList = ({ searchedList }: SearchListProps) => {
     <ul style={{ whiteSpace: "nowrap" }}>
       {searchedList.map(({ id, meta }) => (
         <SearchListItem
-          id={id}
+          key={id}
           title={meta.title}
           onClick={() => selectPost(id)}
         />
