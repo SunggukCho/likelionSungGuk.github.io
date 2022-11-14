@@ -25,7 +25,7 @@ const SearchInput = ({ setSearchList }: SearchInputProps) => {
     setSearchList([...searchList])
   }
 
-  const handleSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSubmit = (e: any) => {
     if (e.code === "Enter" || e.target.name === "searchBtn") {
       searchPosting()
     }
