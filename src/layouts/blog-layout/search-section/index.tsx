@@ -4,7 +4,6 @@ import Search from "./search"
 export default function SearchSection() {
   return (
     <Wrapper>
-      <h1>SearchSection</h1>
       <Search />
     </Wrapper>
   );
