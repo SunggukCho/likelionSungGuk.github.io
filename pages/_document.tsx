@@ -41,6 +41,18 @@ export default class MyDocument extends Document {
     return (
       <Html lang="ko">
         <Head>
+        {/* <!-- Google tag (gtag.js) --> */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRP69GWQ2G"></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-HRP69GWQ2G');
+              `,
+            }}
+          />
           <link
             href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
             rel="stylesheet"
@@ -63,6 +75,7 @@ export default class MyDocument extends Document {
               `,
             }}
           />
+          
         </Head>
         <body>
           <Main />
