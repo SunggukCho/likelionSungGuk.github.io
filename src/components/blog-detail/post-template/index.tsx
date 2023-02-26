@@ -29,7 +29,7 @@ export default function PostTemplate({ post }: PostTemplateProps) {
         <Header>
           <Title>{title}</Title>
           <Bio>
-            <Avatar src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/ghost_1f47b.png" />
+            <Avatar src="https://em-content.zobj.net/source/noto-emoji-animations/344/ghost_1f47b.gif" />
             <Author>likelionSungGuk</Author>
             <Date>{date}</Date>
           </Bio>
